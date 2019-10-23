@@ -1,0 +1,51 @@
+1.Program menghitung Resultan Gaya Newton 2
+
+SET m with value 600
+SET a with value 2
+SET F
+CALCULATE m*a store to F
+PRINT "Jadi resultan gaya yang terjadi adalah" + F
+---------------------------
+
+2. Program Perhitungan Tahun Kabisat 
+SET tahun with any value
+SET hitung1
+SET hitung2
+SET hitung3
+SET hitung4
+
+CALCULATE tahun % 4 = 0 store to hitung1
+CALCULATE tahun % 100 != 0 store to hitung2
+CALCULATE tahun % 100 = 0 store to hitung3
+CALCULATE tahun % 400 = 0 store to hitung4   
+
+IF hitung1 and hitung2 THEN
+	PRINT "Tahun Kabisat"
+ELSEIF hitung1 and hitung3 and hitung4 THEN
+	PRINT "Tahun Kabisat"
+ELSE
+	PRINT "Bukan Tahun Kabisat"
+ENDIF
+--------------------------
+
+3. Program Laundry Day 
+SET JumlahPakaian with value 20
+WHILE jumlahPakaian > 0 DO
+	PRINT jumlahPakaian
+	DECREMENT jumlahPakaian
+ENDWHILE
+PRINT "Time to be clean"
+-------------------------
+
+4. Program Pemeriksaan kuku siswa
+SET Jumlahsiswa with value 40
+
+FOR i = 0 to 40
+	IF kuku_panjang THEN
+		PRINT "Get a punishment"
+	ELSE
+		PRINT "Get a praise"
+	ENDIF
+ENDFOR
+
+

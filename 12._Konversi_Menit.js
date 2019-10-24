@@ -1,0 +1,18 @@
+console.log('Konversi Menit');
+
+function konversiMenit(menit) {
+    var waktu = Math.floor(menit/60);
+    var sisabagi = menit % 60;
+    if (sisabagi < 10){
+        return waktu + ':0' + sisabagi;
+    }else {
+        return waktu + ':' + sisabagi;
+    }
+    
+}
+
+console.log(konversiMenit(63)); // 1:03
+console.log(konversiMenit(124)); // 2:04
+console.log(konversiMenit(53)); // 0:53
+console.log(konversiMenit(88)); // 1:28
+console.log(konversiMenit(120)); // 2:00
